@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Lesson 5/variables.css" alt="">
+        <title>Variables lesson</title>  
+</head>
+
+
+
+    <body>
+        <h1>
+            Cart Control
+        </h1>
+        <button onclick="console.log(`Cart quantity: ${cartQuantity}`);">
+            Cart Quantity
+        </button>
+        <button onclick="cartQuantity++;
+                console.log(`Cart quantity: ${cartQuantity}`);">
+            Add to cart
+        </button>
+        <button onclick="cartQuantity += 2;
+        console.log(`Cart quantity: ${cartQuantity}`);">
+            +2
+        </button>
+        <button onclick="cartQuantity += 3;
+        console.log(`Cart quantity: ${cartQuantity}`);">
+            +3
+        </button>
+        <button onclick="console.log('Cart was reset'); cartQuantity = 0;
+                console.log(`Cart quantity: ${cartQuantity}`);">
+            Reset Cart
+        </button>
+    </body>
+
+
+    <script src="/Lesson 5/variables.js">
+    </script>
+</html>
