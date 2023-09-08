@@ -4,30 +4,21 @@ const scoreCard = JSON.parse(localStorage.getItem('scoreCard')) || {
     ties: 0,
 };
 
+let isAutoPlaying = false;
+let intervalId;
 
-document.querySelector ('.js-rock-button').addEventListener('click', () => {
-    playGame('rock')
-});
-
-document.querySelector ('.js-paper-button').addEventListener('click', () => {
-    playGame('paper')
-});
-
-document.querySelector ('.js-scissors-button').addEventListener('click', () => {
-    playGame('scissors')
-});
-
-
-// This gives keyboard access to play the game, by calling the eventlistener, and passing the event parameter
-document.body.addEventListener('keydown', (event) => {
-    if (event.key === 'r') {
-        playGame('rock');
-    } else if (event.key === 'p') {
-        playGame('paper');
-    } else if (event.key === 's') {
-        playGame('scissors')
+function autoPlay () {
+    if (!isAutoPlaying) {
+        intervalId = setInterval(function () {
+            const palyerMove = pickMove();
+            playGame(palyerMove);
+        }, 1000);
+        isAutoPlaying = true;
+    } else {
+        clearInterval(intervalId);
+        isAutoPlaying = false;
     }
-});
+}
 
 
 function playGame(palyerMove) {
@@ -74,10 +65,10 @@ function playGame(palyerMove) {
     }
 
 
-    if (scoreCard.wins === 5) {
+    if (scoreCard.wins >= 5) {
         alert(`Game over, you win`);
             resetGame();
-    } else if (scoreCard.losses === 5) {
+    } else if (scoreCard.losses >= 5) {
             alert('Game over, you lose')
             resetGame();
     }

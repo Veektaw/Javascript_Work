@@ -1,79 +1,79 @@
-// // const myArray = [10, 20, 30];
+const myArray = [10, 20, 30];
 
-// // console.log(myArray);
+console.log(myArray);
 
-// // myArray[1] = 'Goat';
+myArray[1] = 'Goat';
 
-// // const secondArray = [60, 40, 90, 55, 'Pig', 'Sheep', {name: 'Tyler', age: 20}, [4, 5]]
+const secondArray = [60, 40, 90, 55, 'Pig', 'Sheep', {name: 'Tyler', age: 20}, [4, 5]]
 
-// // console.log(secondArray[6]);
-// // console.log(secondArray.length);
+console.log(secondArray[6]);
+console.log(secondArray.length);
 
-// // secondArray.push(100);
-// // console.log(secondArray);
+secondArray.push(100);
+console.log(secondArray);
 
-// // myArray.splice(0, 1);
+myArray.splice(0, 1);
   
 
 
 
 
 
-// // let i = 1;
+let i = 1;
 
 
-// while (i <= 5) {
-//     console.log(i);
-//     i++
-// }
+while (i <= 5) {
+    console.log(i);
+    i++
+}
 
 
 
 
-// // for (let i = 1; i <= 5; i++) {
-// //     console.log(i);
-// // }
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 
 
-// // let randonNumber = 0;
+let randonNumber = 0;
 
-// // while (randonNumber < 0.5) {
-// //     randonNumber = Math.random()
-// // }
+while (randonNumber < 0.5) {
+    randonNumber = Math.random()
+}
 
-// // console.log(randonNumber)
-
-
-// let indexList = ['wash plate', 'watch movies', 'eat berries', 'play games', 'go home']
-
-// for (let i = 0; i < indexList.length; i++) {
-//     const value = indexList[i];
-//     console.log(value);
-// }
-
-// const nums = [1, 1, 2];
-// let totalNums = 0;
+console.log(randonNumber)
 
 
-// // Loop through items in an array, this is how.
-// for (let i = 0; i < nums.length; i++) {
-//     const num = nums[i];
-//     totalNums += num;
-// }
+let indexList = ['wash plate', 'watch movies', 'eat berries', 'play games', 'go home']
 
-// console.log(totalNums)
+for (let i = 0; i < indexList.length; i++) {
+    const value = indexList[i];
+    console.log(value);
+}
+
+const nums = [1, 1, 2];
+let totalNums = 0;
 
 
-// let totalNumsDoubled = [];
+// Loop through items in an array, this is how.
+for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    totalNums += num;
+}
+
+console.log(totalNums)
 
 
-// // Loop through items in an array, this is how.
-// for (let i = 0; i < nums.length; i++) {
-//     const number = nums[i];
-//     totalNumsDoubled.push(number * 2);
-// }
+let totalNumsDoubled = [];
 
-// console.log(totalNumsDoubled)
+
+// Loop through items in an array, this is how.
+for (let i = 0; i < nums.length; i++) {
+    const number = nums[i];
+    totalNumsDoubled.push(number * 2);
+}
+
+console.log(totalNumsDoubled)
 
 
 
@@ -118,18 +118,18 @@ console.log(myTwo)
 
 
 
-// const takenList = [1, 2, 3, 20, 40, 10, 12, 13];
+const takenList = [1, 2, 3, 20, 40, 10, 12, 13];
 
-// function takeLast() {
-//     if (takenList.length > 0) {
-//         const lastItem = takenList[takenList.length - 1];
-//         console.log(lastItem);
-//     } else {
-//         console.log('The array is empty');
-//     }
-// }
+function takeLast() {
+    if (takenList.length > 0) {
+        const lastItem = takenList[takenList.length - 1];
+        console.log(lastItem);
+    } else {
+        console.log('The array is empty');
+    }
+}
 
-// takeLast();
+takeLast();
 
 
 
@@ -172,29 +172,29 @@ function arraySwap() {
 arraySwap()
 
 
-// const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const testArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// function tester () {
-//     for (let i = 0; i < testArray.length; i += 2) {
-//         console.log(i);
-//     }
-// }
+function tester () {
+    for (let i = 0; i < testArray.length; i += 2) {
+        console.log(i);
+    }
+}
 
-// tester();
-
-
-
-// for (let i = 5; i >= 0; i--) {
-//     console.log(i);
-//   }
+tester();
 
 
-// let i = 5;
 
-// while (i >= 0) {
-//     console.log(i);
-//     i--
-// }
+for (let i = 5; i >= 0; i--) {
+    console.log(i);
+  }
+
+
+let i = 5;
+
+while (i >= 0) {
+    console.log(i);
+    i--
+}
 
 
 let index = 0;

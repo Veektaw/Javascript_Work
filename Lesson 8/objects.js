@@ -126,11 +126,11 @@ product2.fun();
 
 // a method is a function inside an object
 
-// console.log(JSON.stringify(product));
+console.log(JSON.stringify(product));
 
-// const jsonString = JSON.stringify(product);
+const jsonString = JSON.stringify(product);
 
-// console.log(JSON.parse(jsonString));
+console.log(JSON.parse(jsonString));
 
 
 console.log('hello'.length);
